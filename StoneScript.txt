@@ -1,7 +1,7 @@
 // = CONFIG =
 // - MOBILE-SPECIFIC SETTINGS
 var isSpeedRunning = false
-var isStaffJumping = true
+var isStaffJumping = false
 var preferMelee = false
 var isPickPocketingWithSkeletonArm = true
 var isOnPPKillQuest = false
@@ -17,14 +17,14 @@ var foeArmorThreshold = 50
 var fastArmorShieldMax = 14
 var strongArmorShieldMax = 26
 var maxPickPocketBuffs = 2
-var maxOverAvgToExitMult = 1.15
+var maxOverAvgToExitMult = 0
 var devourFireRuneThreshold = 3
 var devourFireRuneBossThreshold = 10
 
 // - ARSENAL
-var splashMeleeWeapon = "big aether sword U"
-var healthRuneA = "poison rune *10"
-var healthRuneB = "vigor rune *10"
+var splashMeleeWeapon = "heavy hammer"
+var healthRuneA = false
+var healthRuneB = false
 var antiArmorMeleeWeapon = "heavy hammer"
 var debuffDamageWeapon = "poison sword dP"
 var debuffDoTWeapon = "fire sword dF"
@@ -32,16 +32,16 @@ var debuffChillWeapon = "ice sword dI"
 var magicRangedWeapon = "vigor staff"
 var lifeStealMeleeWeapon = false
 var lifeStealRangedWeapon = false
-var lifeStealShield = "vigor shield h"
-var icePillarWeaponA = "big aether sword U"
-var icePillarWeaponB = "moondial"
+var lifeStealShield = false
+var icePillarWeaponA = "heavy hammer"
+var icePillarWeaponB = "bardiche"
 var strongArmorShield = "dashing shield +10"
 var fastArmorShield = getAlt(strongArmorShield)
-var iceWandA = "ice wand +14"
+var iceWandA = "ice wand"
 var iceWandB = getAlt(iceWandA)
 var iceWandBossA = iceWandA
 var iceWandBossB = getAlt(iceWandBossA)
-var stoneHammerA = "stone hammer +10"
+var stoneHammerA = false
 var stoneHammerB = getAlt(stoneHammerA)
 
 // - DEFAULT EQUIPMENT
@@ -49,16 +49,16 @@ var mainWeapon = "big aether sword U"
 var mainOffhand = false
 var mainTwoHanded = false
 var mainShield = strongArmorShield
-var mainRanged = "repeating crossbow"
+var mainRanged = "aether crossbow"
 
 // - ELEMENTAL WEAPONS
 var elemWeapons = [
   mainWeapon,            // NONE
-  "poison sword D",      // POISON (vs. Vigor)
-  "vigor sword D",       // VIGOR (vs. Aether)
-  "aether sword D",      // AETHER (vs. Fire)
-  "fire sword D",        // FIRE (vs. Ice)
-  "ice sword +9 D"       // ICE (vs. Poison)
+  "poison sword",      // POISON (vs. Vigor)
+  "vigor sword",       // VIGOR (vs. Aether)
+  "aether sword",      // AETHER (vs. Fire)
+  "fire sword",        // FIRE (vs. Ice)
+  "ice sword"       // ICE (vs. Poison)
 ]
 
 var elemOffhand = [
@@ -72,11 +72,11 @@ var elemOffhand = [
 
 var elemRanged = [
   mainRanged,            // NONE
-  "poison crossbow D",   // POISON (vs. Vigor)
-  "vigor staff D",       // VIGOR (vs. Aether)
-  "aether crossbow D",   // AETHER (vs. Fire)
-  "fire crossbow D",     // FIRE (vs. Ice)
-  "ice crossbow D"       // ICE (vs. Poison)
+  false,   // POISON (vs. Vigor)
+  "vigor staff A",       // VIGOR (vs. Aether)
+  "aether crossbow",   // AETHER (vs. Fire)
+  "fire wand",     // FIRE (vs. Ice)
+  "ice wand"       // ICE (vs. Poison)
 ]
 
 var elemShields = [
