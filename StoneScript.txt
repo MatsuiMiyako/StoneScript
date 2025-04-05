@@ -74,7 +74,7 @@ var elemRanged = [
   mainRanged,            // NONE
   false,   // POISON (vs. Vigor)
   "vigor staff A",       // VIGOR (vs. Aether)
-  "aether crossbow,   // AETHER (vs. Fire)
+  "aether crossbow",   // AETHER (vs. Fire)
   "fire wand",     // FIRE (vs. Ice)
   "ice wand"       // ICE (vs. Poison)
 ]
