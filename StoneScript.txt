@@ -72,11 +72,11 @@ var elemOffhand = [
 
 var elemRanged = [
   mainRanged,            // NONE
-  "poison crossbow dP",   // POISON (vs. Vigor)
+  false,   // POISON (vs. Vigor)
   "vigor staff A",       // VIGOR (vs. Aether)
-  false,   // AETHER (vs. Fire)
-  false,     // FIRE (vs. Ice)
-  false       // ICE (vs. Poison)
+  "aether crossbow,   // AETHER (vs. Fire)
+  "fire wand",     // FIRE (vs. Ice)
+  "ice wand"       // ICE (vs. Poison)
 ]
 
 var elemShields = [
@@ -84,7 +84,7 @@ var elemShields = [
   mainShield,            // POISON (vs. Vigor)
   mainShield,            // VIGOR (vs. Aether)
   mainShield,            // AETHER (vs. Fire)
-  mainShield,            // FIRE (vs. Ice)
+  "fire shield",            // FIRE (vs. Ice)
   mainShield             // ICE (vs. Poison)
 ]
 
